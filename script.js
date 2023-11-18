@@ -16,6 +16,14 @@ function getChoiceUser() {
     prompt("Choose 1 for Rock, choose 2 for Paper and choose 3 for Scissors.")
   );
 
+  if (choiceUser === null) {
+    return null;
+  }
+
+  if (isNaN(choiceUser) || choiceUser < 1 || choiceUser > 3) {
+    return null;
+  }
+
   if (choiceUser === 1) {
     return "Rock";
   } else if (choiceUser === 2) {
@@ -30,6 +38,10 @@ function getChoiceUser() {
 function Game() {
   let PC = getChoicePC();
   let User = getChoiceUser();
+
+  if (User === null) {
+    return null;
+  }
 
   if (PC === User) {
     return 0;
@@ -57,17 +69,23 @@ function playRound() {
   for (let i = 0; i < 5; i++) {
     let result = Game();
 
-    if ((result === 0)) {
+    if (result === null) {
+      alert("Game Over");
+      return;
+    }
+
+    if (result === 0) {
       alert("DRAW!");
       alert("PC: " + PCWins + " User: " + UserWins);
-    } else if ((result === 1)) {
+    } else if (result === 1) {
       UserWins++;
       alert("You have won");
       alert("PC: " + PCWins + " User: " + UserWins);
-    } else if ((result === -1)) {
+    } else if (result === -1) {
       PCWins++;
       alert("You have lost");
       alert("PC: " + PCWins + " User: " + UserWins);
     }
   }
 }
+playRound();
