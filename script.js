@@ -1,5 +1,5 @@
 // PC's choice
-function choicePC() {
+function getChoicePC() {
   let randomChoice = Math.floor(Math.random() * 3) + 1;
   if (randomChoice === 1) {
     return "Rock";
