@@ -1,14 +1,17 @@
 // PC's choice
-function choicePC() {
+function choicePC(val1, val2, val3) {
   let randomChoice = Math.floor(Math.random() * 3) + 1;
   if (randomChoice === 1) {
-    return "Rock";
+    return val1;
   } else if (randomChoice === 2) {
-    return "Paper";
+    return val2;
   } else if (randomChoice === 3) {
-    return "Scissors";
+    return val3;
   }
 }
+
+let PC = choicePC("Rock", "Paper", "Scissors")
+console.log(PC);
 
 // Usser's choice
 
