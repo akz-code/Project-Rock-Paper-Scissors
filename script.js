@@ -11,19 +11,39 @@ function getChoicePC() {
 }
 
 // Usser's choice
-function getChoiceUsser() {
-  
-  let choiceUsser = parseInt(
+function getChoiceUser() {
+  let choiceUser = parseInt(
     prompt("Choose 1 for Rock, choose 2 for Paper and choose 3 for Scissors.")
   );
-  
-  if (choiceUsser === 1) {
+
+  if (choiceUser === 1) {
     return "Rock";
-  } else if (choiceUsser === 2) {
+  } else if (choiceUser === 2) {
     return "Paper";
-  } else if (choiceUsser === 3) {
+  } else if (choiceUser === 3) {
     return "Scissors";
   }
 }
 
-// Play Round
+// Game
+
+function Game() {
+  let PC = getChoicePC();
+  let User = getChoiceUser();
+
+  if (PC === User) {
+    alert("DRAW!");
+  } else if (
+    (PC === "Rock" && User === "Scissors") ||
+    (PC === "Paper" && Usser === "Rock") ||
+    (PC === "Scissors" && Usser === "Paper")
+  ) {
+    alert("You have lost");
+  } else if (
+    (PC === "Rock" && User === "Paper") ||
+    (PC === "Paper" && User === "Scissors") ||
+    (PC === "Scissors" && User === "Rock")
+  ) {
+    alert("You have a won");
+  }
+}
