@@ -56,10 +56,18 @@ function playRound() {
 
   for (let i = 0; i < 5; i++) {
     let result = Game();
-    if ((result = 1)) {
+
+    if ((result === 0)) {
+      alert("DRAW!");
+      alert("PC: " + PCWins + " User: " + UserWins);
+    } else if ((result === 1)) {
       UserWins++;
-    } else if ((result = -1)) {
+      alert("You have won");
+      alert("PC: " + PCWins + " User: " + UserWins);
+    } else if ((result === -1)) {
       PCWins++;
+      alert("You have lost");
+      alert("PC: " + PCWins + " User: " + UserWins);
     }
   }
 }
