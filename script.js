@@ -33,17 +33,20 @@ function Game() {
 
   if (PC === User) {
     alert("DRAW!");
+    return 0
   } else if (
     (PC === "Rock" && User === "Scissors") ||
     (PC === "Paper" && User === "Rock") ||
     (PC === "Scissors" && User === "Paper")
   ) {
     alert("You have lost");
+    return -1
   } else if (
     (PC === "Rock" && User === "Paper") ||
     (PC === "Paper" && User === "Scissors") ||
     (PC === "Scissors" && User === "Rock")
   ) {
     alert("You have a won");
+    return 1
   }
 }
