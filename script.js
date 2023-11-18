@@ -10,7 +10,7 @@ function getChoicePC() {
   }
 }
 
-// Usser's choice
+// User's choice
 function getChoiceUser() {
   let choiceUser = parseInt(
     prompt("Choose 1 for Rock, choose 2 for Paper and choose 3 for Scissors.")
@@ -35,8 +35,8 @@ function Game() {
     alert("DRAW!");
   } else if (
     (PC === "Rock" && User === "Scissors") ||
-    (PC === "Paper" && Usser === "Rock") ||
-    (PC === "Scissors" && Usser === "Paper")
+    (PC === "Paper" && User === "Rock") ||
+    (PC === "Scissors" && User === "Paper")
   ) {
     alert("You have lost");
   } else if (
