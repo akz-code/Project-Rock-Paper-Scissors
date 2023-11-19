@@ -76,15 +76,15 @@ function playRound() {
 
     if (result === 0) {
       alert("DRAW!");
-      alert("PC: " + PCWins + " User: " + UserWins);
+      alert(`PC: ${PCWins}; User: ${UserWins}`);
     } else if (result === 1) {
       UserWins++;
       alert("You have won");
-      alert("PC: " + PCWins + " User: " + UserWins);
+      alert(`PC: ${PCWins}; User: ${UserWins}`);
     } else if (result === -1) {
       PCWins++;
       alert("You have lost");
-      alert("PC: " + PCWins + " User: " + UserWins);
+      alert(`PC: ${PCWins}; User: ${UserWins}`);
     }
   }
 }
