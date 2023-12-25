@@ -71,7 +71,7 @@ function playRound() {
     let result = Game();
 
     if (result === null) {
-      alert("WTF is this? Game Over");
+      console.log("WTF is this? Game Over");
       break;
     }
     if (UserWins === 3 || PCWins === 3) {
@@ -79,16 +79,16 @@ function playRound() {
     }
 
     if (result === 0) {
-      alert("DRAW!");
-      alert(`PC: ${PCWins}; User: ${UserWins}`);
+      console.log("DRAW!");
+      console.log(`PC: ${PCWins}; User: ${UserWins}`);
     } else if (result === 1) {
       UserWins++;
-      alert("You won");
-      alert(`PC: ${PCWins}; User: ${UserWins}`);
+      console.log("You won");
+      console.log(`PC: ${PCWins}; User: ${UserWins}`);
     } else if (result === -1) {
       PCWins++;
-      alert("You lost");
-      alert(`PC: ${PCWins}; User: ${UserWins}`);
+      console.log("You lost");
+      console.log(`PC: ${PCWins}; User: ${UserWins}`);
     }
   }
 }
