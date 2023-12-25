@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock, paper, scissors</title>
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <main>
+        <header>
+          <h1>Rock, Paper, Scissors</h1>
+          <h2 class="endGameInformation"></h2>
+        </header>
     
+        <!--!-------------------- GAME ZONE ----------------------->
+        <div class="mainContainer">
+    
+          <!--*---------------- USER div-------------->
+          <div class="playersContainers">
+    
+            <div class="playerInformation">
+              <p class="playerName">You:</p> <span class="scoreUser">0</span>
+            </div>
+    
+            <div class="buttons">
+              <button class="buttonRock-User"></button>
+              <button class="buttonPaper-User"></button>
+              <button class="buttonScissors-User"></button>
+            </div>
+          </div>
+    
+          <!--*---------------- COMPUTER div------------>
+          <div class="playersContainers">
+    
+            <div class="playerInformation">
+              <p class="playerName">PC:</p> <span class="scorePC">0</span>
+            </div>
+    
+            <div class="buttons">
+              <button class="buttonRock-PC"></button>
+              <button class="buttonPaper-PC"></button>
+              <button class="buttonScissors-PC"></button>
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <footer> Created by MuiZavio </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
