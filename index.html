@@ -9,45 +9,56 @@
   </head>
   <body>
     <main>
-        <header>
-          <h1>Rock, Paper, Scissors</h1>
-          <h2 class="endGameInformation"></h2>
-        </header>
-    
-        <!--!-------------------- GAME ZONE ----------------------->
-        <div class="mainContainer">
-    
-          <!--*---------------- USER div-------------->
-          <div class="playersContainers">
-    
-            <div class="playerInformation">
-              <p class="playerName">You:</p> <span class="scoreUser">0</span>
-            </div>
-    
-            <div class="buttons">
-              <button class="buttonRock-User"></button>
-              <button class="buttonPaper-User"></button>
-              <button class="buttonScissors-User"></button>
-            </div>
+      <header>
+        <h2>Rock, Paper, Scissors</h2>
+        <h3 class="endGameInformation"></h3>
+      </header>
+
+      <!--!-------------------- GAME ZONE ----------------------->
+      <div class="mainContainer">
+        <!--*---------------- USER div-------------->
+        <div class="playersContainers">
+          <div class="playerInformation">
+            <p class="playerName">You:</p>
+            <span class="scoreUser">0</span>
           </div>
-    
-          <!--*---------------- COMPUTER div------------>
-          <div class="playersContainers">
-    
-            <div class="playerInformation">
-              <p class="playerName">PC:</p> <span class="scorePC">0</span>
-            </div>
-    
-            <div class="buttons">
-              <button class="buttonRock-PC"></button>
-              <button class="buttonPaper-PC"></button>
-              <button class="buttonScissors-PC"></button>
-            </div>
+
+          <div class="buttonsDiv">
+            <button class="button buttonRock-User">
+              <img src="https://img.icons8.com/ios/50/rock.png" alt="rock" />
+            </button>
+            <button class="button buttonPaper-User">
+                <img src="https://img.icons8.com/ios/50/paper.png" alt="paper" />
+            </button>
+            <button class="button buttonScissors-User">
+                <img src="https://img.icons8.com/ios/50/scissors.png" alt="scissors"/>
+            </button>
           </div>
         </div>
+
+        <!--*---------------- COMPUTER div------------>
+        <div class="playersContainers">
+          <div class="playerInformation">
+            <p class="playerName">PC:</p>
+            <span class="scorePC">0</span>
+          </div>
+
+          <div class="buttonsDiv">
+            <button class="button buttonRock-PC">
+              <img src="https://img.icons8.com/ios/50/rock.png" alt="rock" />
+            </button>
+            <button class="button buttonPaper-PC">
+              <img src="https://img.icons8.com/ios/50/paper.png" alt="paper" />
+            </button>
+            <button class="button buttonScissors-PC">
+                <img src="https://img.icons8.com/ios/50/scissors.png" alt="scissors"/>
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer> Created by MuiZavio </footer>
+    <footer>Created by @HaKaizen</footer>
 
     <script src="script.js"></script>
   </body>

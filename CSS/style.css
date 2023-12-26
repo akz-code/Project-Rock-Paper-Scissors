@@ -6,13 +6,23 @@
   box-sizing: border-box;
 }
 
+html{
+  font-family: sans-serif;
+}
+
+img{
+
+  max-width: 100%;
+  height: 80%;
+}
+
 /******************* BASIC STYLES *****************************/
 
 body {
   display: flex;
   flex-direction: column;
 
-  background-color: #7a959e;
+  background-color: #34baab;
   min-height: 100vh;
 }
 
@@ -23,17 +33,12 @@ main {
 }
 
 header {
-  border: solid 3px black;
   text-align: center;
   padding: .3rem 1rem;
 }
 
-.mainContainer {
-  flex-grow: 1;
+.endGameInformation{
 
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 
@@ -41,7 +46,7 @@ footer {
   display: flex;
   justify-content: center;
 
-  background-color: #3b2b46;
+  background-color: #484450;
   color: white;
   padding: 1rem 0.5rem;
 }
@@ -55,14 +60,28 @@ footer {
 
 /*********************** FOR BOTH *******************/
 
+.mainContainer {
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 1rem;
+}
 
 .playersContainers {
-  background-color: #424e5e;
+  background-color: #466067;
   border: solid 3px;
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
   min-height: 5rem;
   min-width: 5rem;
+
+  display: flex;
+  flex-direction: column;
 }
+
 
 .playerInformation{
   display: flex;
@@ -83,4 +102,22 @@ footer {
   min-width: 1em;
   border: solid 1px;
   text-align: center;
+}
+
+.buttonsDiv{
+  margin: .6rem .5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+}
+
+.button{
+  height: 3rem;
+  width: 4rem;
+  background-color: #c4c8c5;
+  padding: .2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
