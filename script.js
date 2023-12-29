@@ -101,10 +101,10 @@ const updateScore = function (result) {
 
 //End game
 const endGame = function () {
-  if (userScore === 5) {
+  if (userScore === 3) {
     resetScores();
     return alert("YOU WON!");
-  } else if (computerScore === 5) {
+  } else if (computerScore === 3) {
     resetScores();
     return alert("YOU LOST!");
   }
