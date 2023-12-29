@@ -1,2 +1,3 @@
 # Project-Rock-Paper-Scissors
-Exercise from "The Odin Project"
+
+Demo [here](https://hakaizen.github.io/Project-Rock-Paper-Scissors/)
